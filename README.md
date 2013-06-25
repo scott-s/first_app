@@ -1,5 +1,4 @@
-# Ruby on Rails Tutorial: first app
+# O.C.Tanner Kata 2
 
-This is the first application in the tutorial
-[*Ruby on Rails Tutorial*](http://railstutorial.org/)
-by [Michael Hartl](http://michaelhartl.com/).
+see app/models/weather.rb
+and spec/models/weather_spec.rb
