@@ -1,0 +1,51 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/scott.sorensen/dev/first_app/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/scott.sorensen/dev/first_app/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/scott.sorensen/dev/first_app/app/helpers/hello_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/scott.sorensen/dev/first_app/app/controllers/hellos_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/scott.sorensen/dev/first_app/app/models/weather.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        52,
+        null,
+        null,
+        2,
+        null,
+        null,
+        1,
+        54,
+        54,
+        null,
+        null,
+        1,
+        55,
+        51,
+        50,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1372200040
+  }
+}

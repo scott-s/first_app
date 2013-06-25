@@ -10,6 +10,11 @@ group :development do
 	gem 'sqlite3', '1.3.5'
 end
 
+group :test, :development do
+  gem 'debugger' unless ENV['RM_INFO']
+  gem 'rspec-rails', '~> 2.13.0'
+  gem 'json_spec', '~> 1.1.0'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
