@@ -1,5 +1,13 @@
 class Weather
 
+  def weather
+    process_file "weather.dat", 1, 2
+  end
+
+  def football
+    process_file "football.dat", 6, 8
+  end
+
   def process_file file, index_1, index_2
     min_val = nil
     File.open("public/#{file}") do |f|

@@ -1,6 +1,18 @@
 require 'spec_helper'
 
 describe Weather do
+  describe "#weather" do
+    it "should return answer" do
+      subject.weather.should eq 2
+    end
+  end
+
+  describe "#football" do
+    it "should return answer" do
+      subject.football.should eq 1
+    end
+  end
+
   describe "#process_file" do
     it "should return answer" do
       subject.process_file("weather.dat", 1, 2).should eq 2

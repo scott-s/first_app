@@ -14,7 +14,7 @@
       <img src="./assets/0.7.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-06-25T16:40:40-06:00">2013-06-25T16:40:40-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-06-25T16:56:53-06:00">2013-06-25T16:56:53-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         5.48
+         7.88
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>5</b> files in total.
-    <b>20</b> relevant lines. 
-    <span class="green"><b>20</b> lines covered</span> and
+    <b>24</b> relevant lines. 
+    <span class="green"><b>24</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -93,11 +93,11 @@
       <tr>
         <td class="strong"><a href="#0070663d4acf2a7bc8ac6d457eae37accb5771e5" class="src_link" title="app/models/weather.rb">app/models/weather.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>23</td>
-        <td>14</td>
-        <td>14</td>
+        <td>31</td>
+        <td>18</td>
+        <td>18</td>
         <td>0</td>
-        <td>23.4</td>
+        <td>35.4</td>
       </tr>
       
     </tbody>
@@ -170,15 +170,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         23.4
+         35.4
        </span>
     </span> hits/line)
   </h2>
   <a name="Models"></a>
   <div>
     <b>1</b> files in total.
-    <b>14</b> relevant lines. 
-    <span class="green"><b>14</b> lines covered</span> and
+    <b>18</b> relevant lines. 
+    <span class="green"><b>18</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -198,11 +198,11 @@
       <tr>
         <td class="strong"><a href="#0070663d4acf2a7bc8ac6d457eae37accb5771e5" class="src_link" title="app/models/weather.rb">app/models/weather.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>23</td>
-        <td>14</td>
-        <td>14</td>
+        <td>31</td>
+        <td>18</td>
+        <td>18</td>
         <td>0</td>
-        <td>23.4</td>
+        <td>35.4</td>
       </tr>
       
     </tbody>
@@ -531,8 +531,8 @@
     <h3>app/models/weather.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>14</b> relevant lines. 
-      <span class="green"><b>14</b> lines covered</span> and
+      <b>18</b> relevant lines. 
+      <span class="green"><b>18</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -555,124 +555,172 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">  def process_file file, index_1, index_2</code>
+          <code class="ruby">  def weather</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="4">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
           
-          <code class="ruby">    min_val = nil</code>
+          <code class="ruby">    process_file &quot;weather.dat&quot;, 1, 2</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="5">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="5">
           
-          <code class="ruby">    File.open(&quot;public/#{file}&quot;) do |f|</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="6">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="6">
           
-          <code class="ruby">      while line = f.gets</code>
+          
+          <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="52" data-linenumber="7">
-          <span class="hits">52</span>
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
           
-          <code class="ruby">        min_val = min(min_val, process_line(index_1, index_2, line)) if line.present?</code>
+          <code class="ruby">  def football</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">      end</code>
+          <code class="ruby">    process_file &quot;football.dat&quot;, 6, 8</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
           
           
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="10">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    min_val</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
+        <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">  def process_line index_1, index_2, line</code>
+          <code class="ruby">  def process_file file, index_1, index_2</code>
         </li>
       
-        <li class="covered" data-hits="54" data-linenumber="14">
-          <span class="hits">54</span>
+        <li class="covered" data-hits="4" data-linenumber="12">
+          <span class="hits">4</span>
           
-          <code class="ruby">    record = line.split(&quot; &quot;)</code>
+          <code class="ruby">    min_val = nil</code>
         </li>
       
-        <li class="covered" data-hits="54" data-linenumber="15">
-          <span class="hits">54</span>
+        <li class="covered" data-hits="4" data-linenumber="13">
+          <span class="hits">4</span>
           
-          <code class="ruby">    (record[index_1].to_i - record[index_2].to_i).abs</code>
+          <code class="ruby">    File.open(&quot;public/#{file}&quot;) do |f|</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="14">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      while line = f.gets</code>
+        </li>
+      
+        <li class="covered" data-hits="104" data-linenumber="15">
+          <span class="hits">104</span>
+          
+          <code class="ruby">        min_val = min(min_val, process_line(index_1, index_2, line)) if line.present?</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="18">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="4" data-linenumber="18">
+          <span class="hits">4</span>
           
-          <code class="ruby">  def min (left, right)</code>
+          <code class="ruby">    min_val</code>
         </li>
       
-        <li class="covered" data-hits="55" data-linenumber="19">
-          <span class="hits">55</span>
-          
-          <code class="ruby">    return right if left == nil</code>
-        </li>
-      
-        <li class="covered" data-hits="51" data-linenumber="20">
-          <span class="hits">51</span>
-          
-          <code class="ruby">    return left if right == nil</code>
-        </li>
-      
-        <li class="covered" data-hits="50" data-linenumber="21">
-          <span class="hits">50</span>
-          
-          <code class="ruby">    [left, right].min</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def process_line index_1, index_2, line</code>
+        </li>
+      
+        <li class="covered" data-hits="104" data-linenumber="22">
+          <span class="hits">104</span>
+          
+          <code class="ruby">    record = line.split(&quot; &quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="104" data-linenumber="23">
+          <span class="hits">104</span>
+          
+          <code class="ruby">    (record[index_1].to_i - record[index_2].to_i).abs</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def min (left, right)</code>
+        </li>
+      
+        <li class="covered" data-hits="105" data-linenumber="27">
+          <span class="hits">105</span>
+          
+          <code class="ruby">    return right if left == nil</code>
+        </li>
+      
+        <li class="covered" data-hits="99" data-linenumber="28">
+          <span class="hits">99</span>
+          
+          <code class="ruby">    return left if right == nil</code>
+        </li>
+      
+        <li class="covered" data-hits="98" data-linenumber="29">
+          <span class="hits">98</span>
+          
+          <code class="ruby">    [left, right].min</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
           
           
           <code class="ruby">end</code>
